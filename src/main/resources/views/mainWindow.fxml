@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane fx:controller="sample.controllers.MainWindowController"
+            maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity"
+            xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <center>
+        <AnchorPane fx:id="screensContainer" prefHeight="600.0" prefWidth="800.0" BorderPane.alignment="CENTER"/>
+    </center>
+    <bottom>
+        <Label text="Антикафе &quot;Крылья&quot;" BorderPane.alignment="CENTER"/>
+    </bottom>
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <Menu mnemonicParsing="false" text="Программа">
+                <MenuItem mnemonicParsing="false" text="Сменить пользователя" onAction="#onMenuItemChangeUserClick"/>
+                <MenuItem mnemonicParsing="false" text="Закрыть" onAction="#onMenuItemCloseClick"/>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Магнитные карты">
+                <MenuItem mnemonicParsing="false" text="Зарегистрировать карту"/>
+                <MenuItem mnemonicParsing="false" text="Потеря карты"/>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Клиенты">
+                <MenuItem mnemonicParsing="false" text="Зарегистрировать"/>
+                <MenuItem mnemonicParsing="false" text="Просмотр"/>
+                <MenuItem mnemonicParsing="false" text="Смена карты"/>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Пользователи">
+                <MenuItem mnemonicParsing="false" text="Добавить"/>
+                <MenuItem mnemonicParsing="false" text="Изменить"/>
+                <MenuItem mnemonicParsing="false" text="Удалить"/>
+                <MenuItem mnemonicParsing="false" text="Просмотр"/>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Отчеты">
+                <MenuItem mnemonicParsing="false" text="За день"/>
+                <MenuItem mnemonicParsing="false" text="За неделю"/>
+                <MenuItem mnemonicParsing="false" text="За месяц"/>
+            </Menu>
+        </MenuBar>
+    </top>
+</BorderPane>
